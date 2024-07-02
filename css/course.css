@@ -1,0 +1,64 @@
+.section-title span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.section-title span::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 20px;
+  right: -60px;
+}
+.section-title span::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 20px;
+  right: 150px;
+}
+.card-body img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0.3);
+  /* I changed style */
+  margin: 7px 5px 0 0;
+}
+.card-body .course-title {
+  top: 0px;
+  right: 60px;
+}
+.card-body .course-title a {
+  font-size: 16px;
+}
+.card-body .course-title p {
+  font-size: 14px;
+  color: rgb(84, 83, 83);
+}
+.card-header .card-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card .card-overlay p{
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+
+.course-wrapper{
+background-image: url(../img/common_img.png);
+background-attachment: fixed;
+}
